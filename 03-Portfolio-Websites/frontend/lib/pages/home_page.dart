@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:frontend/components/custom_appbar.dart';
 import 'package:frontend/components/description_homepage.dart';
+import 'package:frontend/components/experience_homepage.dart';
 import 'package:frontend/components/heading_section.dart';
 
 class HomePage extends StatelessWidget {
@@ -26,6 +27,12 @@ class HomePage extends StatelessWidget {
               ),
               // Description
               DescriptionHomepage(),
+
+              // Experience
+              SizedBox(
+                height: 60,
+              ),
+              ExperienceHomepage()
             ],
           ),
         ),
