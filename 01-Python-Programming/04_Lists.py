@@ -1,4 +1,5 @@
 # List [ Mutable,   Ordered,   Duplicate,    All DataTypes,    List-wise OP ]
+# what if I  /10, or + 30 or - 40 or * 3
 
 import copy
 def lists():
