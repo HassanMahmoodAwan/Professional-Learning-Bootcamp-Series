@@ -35,7 +35,7 @@ def lists():
     print(list(reversed(array)))
     
 
-    arrayStr = ''.join(map(str, array))
+    arrayStr = ''.join(array)
     zerosArray = [0] * len(array)
     # array.sort()
     array.index(None)                      # Check either if not Exist should it give -1.

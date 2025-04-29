@@ -10,7 +10,7 @@ def strings():
     print(''.join(list(reversed(channel))))
 
     multiLineStr = """   Hello, World!      
-                    Welcome to Python    """
+                    Welcome to Python  " """
     print(multiLineStr.strip())
 
     print(channel.count('c'))

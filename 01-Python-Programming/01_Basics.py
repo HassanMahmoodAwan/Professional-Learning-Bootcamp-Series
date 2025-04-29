@@ -26,6 +26,7 @@ def variables() -> None:
     one = two = three = 40
     # one, two, three = 10
     one, two, three = 10, 20, 30
+    tple = 1, 2, 3
     
     print(math.pi, type(math.pi), sep=(",  "))
     
@@ -51,9 +52,11 @@ def operators() -> None:
     compare: bool = 10 == 20 and 50 != 60
     print(compare)
     
-    # Relational Operators (> < >= <= << >>)
+    # Relational Operators (> < >= <=)
     condition: bool = 10 > 20 and 13 <= 30
     print(condition)
+    
+    # Bitwise Operators (>>, <<)
     
     # Mapping Operators
     check: bool = "Has" in "Hassan"
@@ -80,5 +83,5 @@ def conditionalStatements() -> None:
 
 if __name__ == "__main__":
     variables()
-    operators()
-    conditionalStatements()
+    # operators()
+    # conditionalStatements()
