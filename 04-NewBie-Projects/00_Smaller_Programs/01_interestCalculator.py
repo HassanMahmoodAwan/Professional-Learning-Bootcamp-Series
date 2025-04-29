@@ -11,3 +11,5 @@ interest = totalAmount - principal
 
 print(f"Total Amount: {totalAmount:.2f}")
 print(f"Interest: {interest:.2f}") 
+
+
