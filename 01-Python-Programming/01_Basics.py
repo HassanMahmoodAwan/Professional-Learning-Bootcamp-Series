@@ -3,12 +3,13 @@
           Example:
                  <class Int>
 """
-print("Hello World!", "Lets Learn Python", end="!\n", sep=", ")
+print("Hello World!", "Lets Learn Python", f"Date: 2-May-25 & {1.22:.1f}", end="!\n", sep=", ")
 
 
-import math, random
-def variables() -> None:
-    """ Store, Types, camelCase, DeepCopy """
+import math, random, time
+
+def basic_concepts() -> None:
+    """ Variable: Store, Types, camelCase, DeepCopy """
     
     userName: str = input("Enter Name: \t")
     
@@ -16,7 +17,7 @@ def variables() -> None:
         age: int = int(input("Enter Age: \t"))
     except ValueError:
         print("Age should be Numeric")
-        variables()
+        basic_concepts()
         return
     
     flag:bool = True
@@ -28,12 +29,26 @@ def variables() -> None:
     one, two, three = 10, 20, 30
     tple = 1, 2, 3
     
+    abs(-20)
+    pow(20, 2)
+    round(0.8787, 1)        # -> 0.9
+    max(20, 30, 40)
+    min(20, 30, 40)
+    
     print(math.pi, type(math.pi), sep=(",  "))
+    math.e
+    math.sqrt(10)
+    math.ceil(9.1)
+    math.floor(9.9)
     
     round(random.random(), 2)
     random.randint(10, 20)
     random.choice([10, 20, 30])
 
+    time.sleep(2)   # Sync 2 secs delay.
+    
+    help(random)    # explain all methods and attributes.
+    dir(random)     # List all methods and attributes.
 
 
 
@@ -64,14 +79,14 @@ def operators() -> None:
     
 
 
-def conditionalStatements() -> None:
+def conditional_statements() -> None:
     """ if-elif-else  ,  match-case-default , Ternary Operator (if-else Shorthand) """
     marks: int = 80
     percentage = 80 / 100 * 100
     
     if percentage >= 80:
          "Good"
-    elif percentage < 80 and percentage >= 70:
+    elif 65 >= percentage < 80:
         "satisfy"
     else:
         "Need Improvment"
@@ -82,6 +97,6 @@ def conditionalStatements() -> None:
 
 
 if __name__ == "__main__":
-    variables()
+    basic_concepts()
     # operators()
-    # conditionalStatements()
+    # conditional_statements()

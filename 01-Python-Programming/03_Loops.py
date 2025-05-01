@@ -1,6 +1,6 @@
 # For-Loop, While Loop, Do-While Loop (custom)
 
-
+# Finite Number of Iterations
 def forLoops():
     for i in range(0, 10, 2):
         a = 10
@@ -18,6 +18,7 @@ def forLoops():
         print("Zip gives combination, provide matching, ignore others")
 
 
+# Can be infinite, but should not be.
 def whileLoops():
     flag = False
     while (flag):

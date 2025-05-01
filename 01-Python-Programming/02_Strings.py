@@ -3,9 +3,12 @@
 def strings():
     channel: str = "Chai \"aur Code!"
     len(channel)
-    channel[1:10]
+    channel[1:10:1]     # Slicing: [start:stop:step]
     channel[::]
     channel[:-1]
+    channel[-1]
+    channel[::2]
+    channel[1:20:3]
     print(f"Reverse is {channel[::-1]}")
     print(''.join(list(reversed(channel))))
 
@@ -13,8 +16,12 @@ def strings():
                     Welcome to Python  " """
     print(multiLineStr.strip())
 
-    print(channel.count('c'))
-    print(channel.index("aur"))
+    channel.count('c')
+    channel.index("aur")
+    channel.find("aur")      # Returns -1 if not found.
+    channel.rfind("aur")
+    channel.isdigit()        # True if all chars digits.
+    channel.isalpha()        # True if all chars alphabets.       
 
     try:
         channel[2] = "check"
