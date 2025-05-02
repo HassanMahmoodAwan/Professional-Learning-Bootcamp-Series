@@ -33,12 +33,12 @@ def whileLoops():
     else:
         print("Runs 5 Times")
 
-
+# Do Work, then Check Condition
 def doWhileLoops():
     counter = 10
     while (True):
         flag = False
-        # do Work, then Check Condition
+        
         if counter <= 10:
             break
     else:
