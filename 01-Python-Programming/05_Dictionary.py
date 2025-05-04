@@ -21,9 +21,13 @@ def dictionary():
         
     user.values()
     user.keys()
+    
     user.get("Habits", "Not Found")
+    user.get("NotExist")              # Return None.
+    user.update({"email": "abl@gmail.com", "phone": "1234567890"})
     
     # user.pop("Habits")              # Arg Required.
+    # user.popitem()                  # Last/Latest Item.
     # del user["Habits"]
     # user.clear()
     
