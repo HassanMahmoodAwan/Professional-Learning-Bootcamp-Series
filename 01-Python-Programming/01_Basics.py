@@ -6,6 +6,15 @@
 print("Hello World!", "Lets Learn Python", f"Date: 2-May-25 & {1.22:.1f}", end="!\n", sep=", ")
 
 
+"""
+    Naming Conventions:
+    1-  Variable:   camelCase()
+    2-  Functions:  lower_case()
+    3-  Classes:    UpperCamelCase()
+
+"""
+
+
 import math, random, time
 
 def basic_concepts() -> None:

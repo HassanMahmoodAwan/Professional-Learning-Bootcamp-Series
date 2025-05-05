@@ -1,7 +1,7 @@
 # For-Loop, While Loop, Do-While Loop (custom)
 
 # Finite Number of Iterations
-def forLoops():
+def for_loops():
     for i in range(0, 10, 2):
         a = 10
 
@@ -19,12 +19,12 @@ def forLoops():
 
 
 # Can be infinite, but should not be.
-def whileLoops():
+def while_loops():
     flag = False
     while (flag):
         counter = 1
     else:
-        print("Infinite Loop")
+        print("Infinite Loop if True, otherwise only else part will execute.")
 
     counter = 0
     while (counter < 5):
@@ -34,7 +34,7 @@ def whileLoops():
         print("Runs 5 Times")
 
 # Do Work, then Check Condition
-def doWhileLoops():
+def do_while_loops():
     counter = 10
     while (True):
         flag = False
@@ -42,7 +42,7 @@ def doWhileLoops():
         if counter <= 10:
             break
     else:
-        print("if loop break, else will not Run")
+        print("if loop break, else will not Run, This code is unreachable.")
 
 
 if __name__ == "__main__":
