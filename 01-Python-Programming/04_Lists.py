@@ -20,11 +20,12 @@ def lists():
     array.insert(50, "exceeded Index so at Last")
     array.pop()
     array.pop(0)
+    array.extend(["new Array", "extend at last"])
     try:
         array.remove("not in list")
     except ValueError:
         print("Not in List")
-    array.extend(["new Array", "extend at last"])
+
 
     # del array
     # del array[2]
