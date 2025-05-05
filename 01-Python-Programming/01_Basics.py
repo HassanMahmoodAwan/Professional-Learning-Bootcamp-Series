@@ -44,6 +44,7 @@ def basic_concepts() -> None:
     round(random.random(), 2)
     random.randint(10, 20)
     random.choice([10, 20, 30])
+    random.shuffle([10 ,29, 23])
 
     time.sleep(2)   # Sync 2 secs delay.
     
