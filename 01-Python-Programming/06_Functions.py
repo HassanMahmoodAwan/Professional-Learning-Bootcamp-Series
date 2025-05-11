@@ -1,38 +1,40 @@
 # Global Variable
 value = 10
 
-def camelCase_Default(param01, param02 = 20) -> tuple:
+def lower_case_default(param01, param02 = 20) -> tuple:
     global value
     value = 20
     return param01, param02          # Tuple Return
 
 
-def allMainConcepts():
+def all_main_concepts():
     
-    def nameParams(p01, p02):
+    def name_params(p01, p02):
         print(f"p01 = {p01} and p02 = {p02}")
-    nameParams(p02=30, p01=5)
+    name_params(p02=30, p01=5)
     
     def kargs(*params):              # Tuple in Arguments.
         print(params)
     kargs(10, 12, 23, 4324)
     
-    def keyValueArgs(**keyValueParams):
+    def key_value_args(**keyValueParams):
         print(keyValueParams)
-    keyValueArgs(first="Hassan", mid="Mahmood", last="Awan")
+    key_value_args(first="Hassan", mid="Mahmood", last="Awan")
         
 
 
-def anonymousFunction():
+def anonymous_function():
     result = lambda x, y = 20 : x + y
     print(result(10))
+    
+    print((lambda : print("Hello world!"))())
 
 
 
 if __name__ == "__main__":
     print(value)
-    camelCase_Default(10, 30)
+    lower_case_default(10, 30)
     print(value)
-    allMainConcepts()
-    anonymousFunction()
+    all_main_concepts()
+    anonymous_function()
     

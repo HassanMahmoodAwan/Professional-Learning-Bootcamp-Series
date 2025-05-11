@@ -1,4 +1,4 @@
-# Tuple (Immutable,  ordered,   All-DataTypes,     NotChangeable )
+# Tuple (Immutable,  ordered,   All-DataTypes,  NotChangeable,  Faster compare to List,  Passed by Reference, Tuple-wise Op )
 
 def tuples():
     myTuple:tuple = (10, 12, 13, "Hassan", True)

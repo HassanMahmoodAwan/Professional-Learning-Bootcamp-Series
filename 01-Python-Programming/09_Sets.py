@@ -1,4 +1,4 @@
-# Sets { Unordered,   No Indexing,   Unique,   All-DataTypes Allowed, Mutable }
+# Sets { Unordered,   No Indexing,   Unique,   All-DataTypes Allowed, Mutable, passed by Reference }
 # FrozenSets ==> Immutable
 
 def sets():
