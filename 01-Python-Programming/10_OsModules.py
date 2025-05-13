@@ -1,6 +1,6 @@
 import os
 
-print(os.name)                        # ?
+print(os.name)                        # nt for windows, posix for mac/linux
 print(os.path.exists("main.py"))
 
 # Get working Directory
