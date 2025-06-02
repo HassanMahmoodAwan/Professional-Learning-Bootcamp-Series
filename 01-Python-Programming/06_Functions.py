@@ -31,10 +31,22 @@ def anonymous_function():
 
 
 
-if __name__ == "__main__":
-    print(value)
-    lower_case_default(10, 30)
-    print(value)
-    all_main_concepts()
-    anonymous_function()
+def clousure_scope():
     
+    def adder(num):
+        def inner(x):
+            return x**num
+        return inner           # return Function defination, closure sends all referred varaible with func defination.
+    
+    result = adder(2)
+    print(result(2))    
+    
+
+
+if __name__ == "__main__":
+    # print(value)
+    # lower_case_default(10, 30)
+    # print(value)
+    # all_main_concepts()
+    # anonymous_function()
+    clousure_scope()
